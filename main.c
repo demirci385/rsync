@@ -22,6 +22,7 @@
 
 #include "rsync.h"
 #include "inums.h"
+#include "stdio.h"
 #include "ifuncs.h"
 #include "io.h"
 #if defined CONFIG_LOCALE && defined HAVE_LOCALE_H
@@ -1710,7 +1711,7 @@ static void unset_env_var(const char *var)
 int main(int argc,char *argv[])
 {
 	int ret;
-
+        print("Firat was here");
 	raw_argc = argc;
 	raw_argv = argv;
 
